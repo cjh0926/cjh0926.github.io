@@ -18,7 +18,7 @@ body {
   background: var(--bg);
   color: var(--text);
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.7;
   padding: 0 24px;
 }
@@ -95,6 +95,46 @@ section {
   content: '아직 소개글이 없습니다.';
   color: var(--muted);
   font-style: italic;
+}
+
+/* ── Education ── */
+.edu-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.edu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.edu-item.placeholder {
+  opacity: 0.35;
+}
+
+.edu-main {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.edu-school {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.edu-degree {
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.edu-year {
+  font-size: 0.82rem;
+  color: var(--muted);
+  white-space: nowrap;
 }
 
 /* ── Projects ── */
