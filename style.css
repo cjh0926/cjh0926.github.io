@@ -77,11 +77,11 @@ section {
 }
 
 .section-label {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   color: var(--muted);
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 /* ── About ── */
