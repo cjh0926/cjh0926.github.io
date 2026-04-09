@@ -255,13 +255,18 @@ section {
   border-color: var(--text);
 }
 
+.email-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .copy-toast {
   font-size: 0.75rem;
   color: var(--muted);
   opacity: 0;
   transition: opacity 0.2s;
   pointer-events: none;
-  position: absolute;
 }
 
 .copy-toast.show {
