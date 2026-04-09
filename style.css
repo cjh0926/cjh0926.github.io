@@ -92,7 +92,7 @@ section {
 }
 
 .bio.placeholder {
-  opacity: 0.80;
+  opacity: 0.75;
 }
 
 .bio:empty::before {
