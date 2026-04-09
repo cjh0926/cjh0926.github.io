@@ -221,6 +221,7 @@ section {
   align-items: flex-start;
   gap: 24px;
   flex-wrap: wrap;
+  position: relative;
 }
 
 .contact-links a {
@@ -258,6 +259,7 @@ section {
   opacity: 0;
   transition: opacity 0.2s;
   pointer-events: none;
+  position: absolute;
 }
 
 .copy-toast.show {
