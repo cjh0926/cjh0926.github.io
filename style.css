@@ -232,6 +232,7 @@ section {
   border-bottom: 1px solid var(--border);
   padding-bottom: 2px;
   transition: border-color 0.2s;
+  display: inline-block;
 }
 
 .contact-links a:hover {
@@ -247,6 +248,7 @@ section {
   cursor: pointer;
   transition: border-color 0.2s;
   position: relative;
+  display: inline-block;
 }
 
 .email-copy:hover {
