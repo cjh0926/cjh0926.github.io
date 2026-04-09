@@ -111,10 +111,6 @@ section {
   border-bottom: 1px solid var(--border);
 }
 
-.edu-item.placeholder {
-  opacity: 0.35;
-}
-
 .edu-main {
   display: flex;
   flex-direction: column;
@@ -187,10 +183,6 @@ section {
   padding: 18px 0;
   border-bottom: 1px solid var(--border);
   transition: background 0.15s;
-}
-
-.project-item.placeholder {
-  opacity: 0.35;
 }
 
 .project-title {
