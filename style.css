@@ -86,9 +86,13 @@ section {
 
 /* ── About ── */
 .bio {
-  font-size: 1.05rem;
+  font-size: 0.83rem;
   color: var(--text);
-  max-width: 520px;
+  max-width: 600px;
+}
+
+.bio.placeholder {
+  opacity: 0.80;
 }
 
 .bio:empty::before {
