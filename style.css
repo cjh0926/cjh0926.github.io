@@ -125,7 +125,7 @@ section {
 
 .edu-school {
   font-size: 0.95rem;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .edu-degree {
@@ -152,7 +152,7 @@ section {
 
 .edu-sub-title {
   font-size: 0.85rem;
-  font-weight: 480;
+  font-weight: 400;
   color: var(--muted);
 }
 
