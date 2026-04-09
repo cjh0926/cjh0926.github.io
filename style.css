@@ -1,0 +1,189 @@
+/* ── Reset ── */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* ── Variables ── */
+:root {
+  --bg: #f7f6f2;
+  --text: #1a1a1a;
+  --muted: #888;
+  --accent: #1a1a1a;
+  --border: #ddd;
+  --max-w: 720px;
+}
+
+/* ── Base ── */
+html { font-size: 16px; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'DM Mono', monospace;
+  font-weight: 300;
+  line-height: 1.7;
+  padding: 0 24px;
+}
+
+/* ── Layout ── */
+main {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 80px 0 120px;
+}
+
+/* ── Header ── */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 32px;
+  margin-bottom: 80px;
+}
+
+.name-block .label {
+  display: block;
+  font-size: 0.72rem;
+  color: var(--muted);
+  letter-spacing: 0.08em;
+  margin-bottom: 6px;
+}
+
+.name-block h1 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 2.8rem;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+nav {
+  display: flex;
+  gap: 24px;
+}
+
+nav a {
+  font-size: 0.78rem;
+  color: var(--muted);
+  text-decoration: none;
+  letter-spacing: 0.06em;
+  transition: color 0.2s;
+}
+
+nav a:hover { color: var(--text); }
+
+/* ── Sections ── */
+section {
+  margin-bottom: 72px;
+}
+
+.section-label {
+  font-size: 0.7rem;
+  color: var(--muted);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+/* ── About ── */
+.bio {
+  font-size: 1.05rem;
+  color: var(--text);
+  max-width: 520px;
+}
+
+.bio:empty::before {
+  content: '아직 소개글이 없습니다.';
+  color: var(--muted);
+  font-style: italic;
+}
+
+/* ── Projects ── */
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.project-item {
+  display: grid;
+  grid-template-columns: 1fr 2fr auto;
+  align-items: baseline;
+  gap: 16px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--border);
+  transition: background 0.15s;
+}
+
+.project-item.placeholder {
+  opacity: 0.35;
+}
+
+.project-title {
+  font-size: 0.88rem;
+  font-weight: 400;
+}
+
+.project-desc {
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.project-link {
+  font-size: 0.88rem;
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.project-link:hover { color: var(--text); }
+
+/* ── Contact ── */
+.contact-links {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.contact-links a {
+  font-size: 0.88rem;
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 2px;
+  transition: border-color 0.2s;
+}
+
+.contact-links a:hover {
+  border-color: var(--text);
+}
+
+/* ── Footer ── */
+footer {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 24px 0;
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.72rem;
+  color: var(--muted);
+  letter-spacing: 0.06em;
+}
+
+/* ── Mobile ── */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .project-item {
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto;
+  }
+
+  .project-desc {
+    grid-column: 1;
+  }
+}

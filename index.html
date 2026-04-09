@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>최지호</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header>
+      <div class="name-block">
+        <span class="label">— 최지호 / Jiho Choi</span>
+        <h1>Portfolio</h1>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section id="about">
+      <div class="section-label">01 / About</div>
+      <p class="bio"><!-- 소개글을 여기에 채워주세요 --></p>
+    </section>
+
+    <section id="projects">
+      <div class="section-label">02 / Projects</div>
+      <div class="project-list">
+        <!-- 프로젝트를 여기에 채워주세요 -->
+        <div class="project-item placeholder">
+          <span class="project-title">Project Name</span>
+          <span class="project-desc">Short description</span>
+          <a href="#" class="project-link">↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="section-label">03 / Contact</div>
+      <div class="contact-links">
+        <!-- 연락처를 여기에 채워주세요 -->
+        <a href="https://github.com/cjh0926" target="_blank">GitHub ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>cjh0926</span>
+    <span id="year"></span>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
