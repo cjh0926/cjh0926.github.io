@@ -89,9 +89,6 @@ section {
   font-size: 0.855rem;
   color: var(--text);
   max-width: 600px;
-}
-
-.bio.placeholder {
   opacity: 0.80;
 }
 
