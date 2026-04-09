@@ -86,7 +86,7 @@ section {
 
 /* ── About ── */
 .bio {
-  font-size: 0.846rem;
+  font-size: 0.855rem;
   color: var(--text);
   max-width: 600px;
 }
@@ -155,7 +155,7 @@ section {
 
 .edu-sub-title {
   font-size: 0.85rem;
-  font-weight: 400;
+  font-weight: 480;
   color: var(--muted);
 }
 
