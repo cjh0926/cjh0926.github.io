@@ -152,16 +152,17 @@ section {
 .edu-sub-title {
   font-size: 0.85rem;
   font-weight: 400;
+  color: var(--text);
 }
 
 .edu-sub-desc {
   font-size: 0.78rem;
-  color: var(--muted);
+  color: var(--text);
 }
 
 .edu-sub-year {
   font-size: 0.78rem;
-  color: var(--muted);
+  color: var(--text);
   white-space: nowrap;
 }
 
@@ -229,6 +230,32 @@ section {
 
 .contact-links a:hover {
   border-color: var(--text);
+}
+
+.email-copy {
+  font-size: 0.88rem;
+  color: var(--text);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 2px;
+  cursor: pointer;
+  transition: border-color 0.2s;
+  position: relative;
+}
+
+.email-copy:hover {
+  border-color: var(--text);
+}
+
+.copy-toast {
+  font-size: 0.75rem;
+  color: var(--muted);
+  opacity: 0;
+  transition: opacity 0.2s;
+  pointer-events: none;
+}
+
+.copy-toast.show {
+  opacity: 1;
 }
 
 /* ── Footer ── */
