@@ -17,20 +17,18 @@
         <a href="#about">About</a>
         <a href="#education">Education</a>
         <a href="#projects">Projects</a>
+        <a href="#misc">Misc</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
-
     <section id="about">
       <div class="section-label">About</div>
-        <p class="bio">Hello.<br>
-                       My name is Jiho Choi (최지호) from Republic of Korea (ROK), and I am interested in Systems and Security.<br> 
-                       This site serves as both a portfolio and a showcase of my personal projects.<br>
-                       More to come!<br><br>
-                       Language: Korean (fluent), English (fluent), Spanish (advanced), Chinese (survival-level)<br>
-        </p>
+      <p class="bio">Hello.<br>
+                     My name is Jiho Choi (최지호) from Republic of Korea (ROK), and I am interested in Systems and Security.<br>
+                     This site serves as both a portfolio and a showcase of my personal projects.<br>
+                     More to come!
+      </p>
     </section>
-
     <section id="education">
       <div class="section-label">Education</div>
       <div class="edu-list">
@@ -50,7 +48,6 @@
         </div>
       </div>
     </section>
-
     <section id="projects">
       <div class="section-label">Projects</div>
       <div class="project-list">
@@ -61,7 +58,13 @@
         </div>
       </div>
     </section>
-
+    <section id="misc">
+      <div class="section-label">Misc</div>
+      <p class="bio">
+        Languages: Korean (fluent), English (fluent), Spanish (advanced), Chinese (survival-level)<br>
+        Interests: Boxing, Theology
+      </p>
+    </section>
     <section id="contact">
       <div class="section-label">Contact</div>
       <div class="contact-links">
@@ -73,22 +76,19 @@
       </div>
     </section>
   </main>
-
   <footer>
     <span>Jiho Choi</span>
     <span id="year"></span>
   </footer>
-
   <script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-
-  function copyEmail() {
-    navigator.clipboard.writeText('cjhsnu0926@snu.ac.kr').then(() => {
-      const toast = document.getElementById('copy-toast');
-      toast.classList.add('show');
-      setTimeout(() => toast.classList.remove('show'), 2000);
-    });
-  }
-</script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    function copyEmail() {
+      navigator.clipboard.writeText('cjhsnu0926@snu.ac.kr').then(() => {
+        const toast = document.getElementById('copy-toast');
+        toast.classList.add('show');
+        setTimeout(() => toast.classList.remove('show'), 2000);
+      });
+    }
+  </script>
 </body>
 </html>
